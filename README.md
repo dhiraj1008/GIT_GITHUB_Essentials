@@ -1,6 +1,9 @@
-## Git And Github: Your Guide to Version Control And Github
-![gitandgithub](https://github.com/dhiraj1008/learning-git/assets/94028619/c8d55c10-5285-4d9b-90bc-3735fff4ffd6)
- 
+## Github: Your Guide to Version Control And Github
+
+
+![gitgithub2](https://github.com/dhiraj1008/learning-git/assets/94028619/2193af4f-0ea9-4524-8af8-a4c1535ae1ee)
+
+
 This guide is your comprehensive resource for mastering Git, the essential version control system for developers. With code examples and clear explanations, you'll learn how to manage your code efficiently, collaborate with others, and contribute to open source projects.
 ### What is Git?
 ![git](https://github.com/dhiraj1008/learning-git/assets/94028619/da23ba12-fc30-4459-a62d-9c7a16089206)
