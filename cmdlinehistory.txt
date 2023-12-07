@@ -1,0 +1,2469 @@
+darsh@Dhiraj MINGW64 ~
+$ pwd
+/c/Users/darsh
+
+darsh@Dhiraj MINGW64 ~
+$ cd ..
+c
+darsh@Dhiraj MINGW64 /c/Users
+$ cd ..
+c
+darsh@Dhiraj MINGW64 /c
+$ cd desktop
+
+darsh@Dhiraj MINGW64 /c/desktop
+$ cd dhiraj
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj
+$ cd git_github_learn/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn
+$ ls
+'Git and GitHub Tutorial For Beginners Full Course [2021] [NEW].mp4'
+ learninggit/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn
+$ cd learninggit/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git remote add origin https://github.com/dhiraj1008/learning-git.git
+error: remote origin already exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git checkout -
+Previous HEAD position was f789fa5 added utlis.js
+Switched to branch 'feature-b'
+Your branch is up to date with 'origin/feature-b'.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull
+fatal: unable to access 'https://github.com/dhiraj1008/learning-git.git/': Could not resolve host: github.com
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull feature-b
+fatal: 'feature-b' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 626 bytes | 313.00 KiB/s, done.
+From https://github.com/dhiraj1008/learning-git
+   f789fa5..e5b8886  main       -> origin/main
+Your configuration specifies to merge with the ref 'refs/heads/feature-b'
+from the remote, but no such ref was fetched.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git log
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (HEAD -> feature-b, origin/feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git checkout -
+Note: switching to 'f789fa5e8efaa0c05d1e4d8074d479106913e431'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f789fa5 added utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git log
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (HEAD, origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git pull
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git log
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (HEAD, origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git pull origin main
+From https://github.com/dhiraj1008/learning-git
+ * branch            main       -> FETCH_HEAD
+Updating f789fa5..e5b8886
+Fast-forward
+ utlis.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git log
+commit e5b88867f9f14613511804f5fac66c06c8920cca (HEAD, origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+darsh@Dhiraj MINGW64 ~
+$ pew
+bash: pew: command not found
+
+darsh@Dhiraj MINGW64 ~
+$ pwd
+/c/Users/darsh
+
+darsh@Dhiraj MINGW64 ~
+$ cd ..
+c
+darsh@Dhiraj MINGW64 /c/Users
+$ cd ..
+c
+darsh@Dhiraj MINGW64 /c
+$ cd desktop
+
+darsh@Dhiraj MINGW64 /c/desktop
+$ cd dhiraj
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj
+$ cd git_github_learn/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn
+$ ls
+'Git and GitHub Tutorial For Beginners Full Course [2021] [NEW].mp4'
+ learninggit/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn
+$ cd learninggit/
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git remote add origin https://github.com/dhiraj1008/learning-git.git
+error: remote origin already exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git checkout -
+Previous HEAD position was f789fa5 added utlis.js
+Switched to branch 'feature-b'
+Your branch is up to date with 'origin/feature-b'.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull
+fatal: unable to access 'https://github.com/dhiraj1008/learning-git.git/': Could not reso
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull feature-b
+fatal: 'feature-b' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 626 bytes | 313.00 KiB/s, done.
+From https://github.com/dhiraj1008/learning-git
+   f789fa5..e5b8886  main       -> origin/main
+Your configuration specifies to merge with the ref 'refs/heads/feature-b'
+from the remote, but no such ref was fetched.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git log
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (HEAD -> feature-b, origin/feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git checkout -
+Note: switching to 'f789fa5e8efaa0c05d1e4d8074d479106913e431'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f789fa5 added utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git log
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (HEAD, origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git pull
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git log
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (HEAD, origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((f789fa5...))
+$ git pull origin main
+From https://github.com/dhiraj1008/learning-git
+ * branch            main       -> FETCH_HEAD
+Updating f789fa5..e5b8886
+Fast-forward
+ utlis.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git log
+commit e5b88867f9f14613511804f5fac66c06c8920cca (HEAD, origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git branch -a
+* (HEAD detached from f789fa5)
+  feature-b
+  remotes/origin/feature-a
+  remotes/origin/feature-b
+  remotes/origin/main
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git checkout -
+Previous HEAD position was e5b8886 Merge pull request #1 from dhiraj1008/feature-b
+Switched to branch 'feature-b'
+Your branch is up to date with 'origin/feature-b'.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-b)
+$ git checkout -
+Note: switching to 'e5b88867f9f14613511804f5fac66c06c8920cca'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e5b8886 Merge pull request #1 from dhiraj1008/feature-b
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ ^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git branch -m e5b8886 main
+fatal: No branch named 'e5b8886'.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git branch -m e5b8886... main
+fatal: Invalid branch name: 'e5b8886...'
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ ^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git branch -m (e5b8886...) main
+bash: syntax error near unexpected token `('
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ git checkout -b feature-xyz
+Switched to a new branch 'feature-xyz'
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi status
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        status
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  status  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git commit -m "index.htm added with biolerplate code"
+[feature-xyz 9f38a3f] index.htm added with biolerplate code
+ 2 files changed, 10 insertions(+)
+ create mode 100644 status
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push
+fatal: The current branch feature-xyz has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-xyz
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-xyz' on GitHub by visiting:
+remote:      https://github.com/dhiraj1008/learning-git/pull/new/feature-xyz
+remote:
+To https://github.com/dhiraj1008/learning-git.git
+ * [new branch]      feature-xyz -> feature-xyz
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+    <p>Added local paragraph tag on the same line as you added</p>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git commit -m "added the p tag in  index.html"
+[feature-xyz 4a4ed0b] added the p tag in  index.html
+ 1 file changed, 1 insertion(+)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push
+fatal: The current branch feature-xyz has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-xyz
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push orgigin feature-xyz
+fatal: 'orgigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+To https://github.com/dhiraj1008/learning-git.git
+ ! [rejected]        feature-xyz -> feature-xyz (fetch first)
+error: failed to push some refs to 'https://github.com/dhiraj1008/learning-git.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 713 bytes | 79.00 KiB/s, done.
+From https://github.com/dhiraj1008/learning-git
+   9f38a3f..283eb99  feature-xyz -> origin/feature-xyz
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> feature-xyz
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git pull
+fatal: unable to access 'https://github.com/dhiraj1008/learning-git.git/': Could not resolve host: github.com
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> feature-xyz
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+To https://github.com/dhiraj1008/learning-git.git
+ ! [rejected]        feature-xyz -> feature-xyz (non-fast-forward)
+error: failed to push some refs to 'https://github.com/dhiraj1008/learning-git.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git pull origin feature-xyz
+From https://github.com/dhiraj1008/learning-git
+ * branch            feature-xyz -> FETCH_HEAD
+Auto-merging index.html
+Merge made by the 'ort' strategy.
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git commit -m "added the p tag "
+[feature-xyz 240f230] added the p tag
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit 240f230d54ce9ed47156fd2104a227711c6dc256 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature-xyz
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+ ESCOD
+commit 240f230d54ce9ed47156fd2104a227711c6dc256 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature-xyz
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+ ESCOD
+commit 240f230d54ce9ed47156fd2104a227711c6dc256 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature-xyz
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+ ESCOD
+commit 240f230d54ce9ed47156fd2104a227711c6dc256 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature-xyz
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+(END)
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+(END)
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+~
+(END)
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+~
+(END)
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+~
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+~
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 09:52:45 2023 +0530
+
+    main.go file added
+
+commit fde5d9bc3408296e54fad4eb75f0c65629ad6424
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 22:09:04 2023 +0530
+
+    added body{} in main.css
+
+commit 5832fbe46238cbfd80c70719b1193759a8e9af1c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Tue Dec 5 21:48:55 2023 +0530
+
+    Untitled project is added
+~
+...skipping...
+commit 240f230d54ce9ed47156fd2104a227711c6dc256 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+commit 867330c0b82394291b0d62ee2ba017d5661c7930 (origin/feature-b, feature-b)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:13:48 2023 +0530
+
+    updated utils,js file
+
+commit f789fa5e8efaa0c05d1e4d8074d479106913e431 (origin/feature-a)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:50:22 2023 +0530
+
+    added utlis.js
+
+commit 8e775f4332e3a35c472518b113600afa61ef76b8
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 11:25:01 2023 +0530
+
+    Create README.md
+
+commit 49981e06fbabb5fa3c247162c7241e2d41ec908e
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <bodyi>
+        <p>added the p tag</p>
+  </body>
+</html>
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 982 bytes | 982.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/dhiraj1008/learning-git.git
+   283eb99..240f230  feature-xyz -> feature-xyz
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git commit -m "added new p tag"
+[feature-xyz 5a4d2cb] added new p tag
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+To https://github.com/dhiraj1008/learning-git.git
+ ! [rejected]        feature-xyz -> feature-xyz (fetch first)
+error: failed to push some refs to 'https://github.com/dhiraj1008/learning-git.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz|MERGING)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz|MERGING)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz|MERGING)
+$ vi index.html
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz|MERGING)
+commit 9204a45ff0109bc21deec73b2cf70b8ebace1229 (HEAD -> feature-xyz)
+Merge: 5a4d2cb 5f6ead9
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:49:02 2023 +0530
+
+    merge conflict
+
+commit 5a4d2cb153b7907d89d27249f3d5a6135945fb72
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 5f6ead9c8dbd0a78cd7a2d5306c92502d1ff048a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit 240f230d54ce9ed47156fd2104a227711c6dc256
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature
+commit 9204a45ff0109bc21deec73b2cf70b8ebace1229 (HEAD -> feature-xyz)
+Merge: 5a4d2cb 5f6ead9
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:49:02 2023 +0530
+
+    merge conflict
+
+commit 5a4d2cb153b7907d89d27249f3d5a6135945fb72
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+commit 9204a45ff0109bc21deec73b2cf70b8ebace1229 (HEAD -> feature-xyz)
+Merge: 5a4d2cb 5f6ead9
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:49:02 2023 +0530
+
+    merge conflict
+
+commit 5a4d2cb153b7907d89d27249f3d5a6135945fb72
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 5f6ead9c8dbd0a78cd7a2d5306c92502d1ff048a (origin/feature-xyz)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit 240f230d54ce9ed47156fd2104a227711c6dc256
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 587 bytes | 587.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/dhiraj1008/learning-git.git
+   5f6ead9..9204a45  feature-xyz -> feature-xyz
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <bodyi>
+        <p>added the new p tag</p>
+        <p>This is a paragraph tag</p>
+        <h1>This is a heading tag</h1>
+  </body>
+</html>
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit 9204a45ff0109bc21deec73b2cf70b8ebace1229 (HEAD -> feature-xyz, origin/feature-xyz)
+Merge: 5a4d2cb 5f6ead9
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:49:02 2023 +0530
+
+    merge conflict
+
+commit 5a4d2cb153b7907d89d27249f3d5a6135945fb72
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 5f6ead9c8dbd0a78cd7a2d5306c92502d1ff048a
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit 240f230d54ce9ed47156fd2104a227711c6dc256
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 7b5a3c45fe10e8b845d8b68081bb9bd8c890f05f
+Merge: 4a4ed0b 283eb99
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:34:03 2023 +0530
+
+    Merge branch 'feature-xyz' of https://github.com/dhiraj1008/learning-git into feature-xyz
+
+commit 4a4ed0bd0dbe2f2b8012d7007513df85face0c01
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 283eb9930b013abd0331449a67da58888a811c5a
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 9f38a3f77fecd02a68d20b8c2700ddf78a9053e7
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca (origin/main)
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+index.htm added with biolerplate code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Update index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+added the p tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+added new p tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Update index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[detached HEAD 47d54bb] Update index.html
+ Author: Dhiraj Alate <dhirajalate92@gmail.com>
+ 1 file changed, 2 insertions(+)
+Successfully rebased and updated refs/heads/feature-xyz.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push
+fatal: The current branch feature-xyz has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-xyz
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature-xyz
+To https://github.com/dhiraj1008/learning-git.git
+ ! [rejected]        feature-xyz -> feature-xyz (non-fast-forward)
+error: failed to push some refs to 'https://github.com/dhiraj1008/learning-git.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push origin feature -f
+error: src refspec feature does not match any
+error: failed to push some refs to 'https://github.com/dhiraj1008/learning-git.git'
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push -f
+fatal: The current branch feature-xyz has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-xyz
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git push -f origin feature-xyz
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 1.89 KiB | 1.89 MiB/s, done.
+Total 18 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), completed with 1 local object.
+To https://github.com/dhiraj1008/learning-git.git
+ + 9204a45...47d54bb feature-xyz -> feature-xyz (forced update)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit e21cf65fd0a3ba536b3220c982cd375546333d17 (HEAD -> feature-xyz, origin/feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Thu Dec 7 08:54:25 2023 +0530
+
+    added github
+
+commit 47d54bb64578f4edd103ac3007160243320c3f96
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit c5da470707b572a6a447a3e7e1d08e72321b7e53
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 818fa8af407193f6946e555811f716d0c1232a73
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 3ee57c79cd1047b0baf0e4815d1c1c62f912c570
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 5a521aabb353a3f4ac3e8266199ede3e34ebe81c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 469ce6e775c5762cb02ef21a7749387603c05abc
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit f857dc179da2190d08ea8187d883bbf3d992580c (origin/main)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 19:28:45 2023 +0530
+
+    Update index.html
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  status  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ vi utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   utlis.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git commit -m "added on life in utils.js"
+[feature-xyz 31ac7d3] added on life in utils.js
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit 31ac7d3ea9c6b7f3bd6acfd47bda64525888d976 (HEAD -> feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Thu Dec 7 09:19:45 2023 +0530
+
+    added on life in utils.js
+
+commit e21cf65fd0a3ba536b3220c982cd375546333d17 (origin/feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Thu Dec 7 08:54:25 2023 +0530
+
+    added github
+
+commit 47d54bb64578f4edd103ac3007160243320c3f96
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit c5da470707b572a6a447a3e7e1d08e72321b7e53
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 818fa8af407193f6946e555811f716d0c1232a73
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 3ee57c79cd1047b0baf0e4815d1c1c62f912c570
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 5a521aabb353a3f4ac3e8266199ede3e34ebe81c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 469ce6e775c5762cb02ef21a7749387603c05abc
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit f857dc179da2190d08ea8187d883bbf3d992580c (origin/main)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 19:28:45 2023 +0530
+
+    Update index.html
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca
+Merge: f789fa5 867330c
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ^C
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git reset e21cf65fd0a3ba536b3220c982cd375546333d17
+Unstaged changes after reset:
+M       utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit e21cf65fd0a3ba536b3220c982cd375546333d17 (HEAD -> feature-xyz, origin/feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Thu Dec 7 08:54:25 2023 +0530
+
+    added github
+
+commit 47d54bb64578f4edd103ac3007160243320c3f96
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit c5da470707b572a6a447a3e7e1d08e72321b7e53
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 818fa8af407193f6946e555811f716d0c1232a73
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 3ee57c79cd1047b0baf0e4815d1c1c62f912c570
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 5a521aabb353a3f4ac3e8266199ede3e34ebe81c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 469ce6e775c5762cb02ef21a7749387603c05abc
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit f857dc179da2190d08ea8187d883bbf3d992580c (origin/main)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 19:28:45 2023 +0530
+
+    Update index.html
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   utlis.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat utils.js
+cat: utils.js: No such file or directory
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cls
+bash: cls: command not found
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  status  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat utlis.js
+//Todo - implement applicatios
+//Algorithm for our applicatiois
+//life is a game
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   utlis.js
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ touch hipe.txt
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   utlis.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hipe.txt
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stage
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stash
+Saved working directory and index state WIP on feature-xyz: e21cf65 added github
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+nothing to commit, working tree clean
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git log
+commit e21cf65fd0a3ba536b3220c982cd375546333d17 (HEAD -> feature-xyz, origin/feature-xyz)
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Thu Dec 7 08:54:25 2023 +0530
+
+    added github
+
+commit 47d54bb64578f4edd103ac3007160243320c3f96
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:42:43 2023 +0530
+
+    Update index.html
+
+commit c5da470707b572a6a447a3e7e1d08e72321b7e53
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:43:45 2023 +0530
+
+    added new p tag
+
+commit 818fa8af407193f6946e555811f716d0c1232a73
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:38:54 2023 +0530
+
+    added the p tag
+
+commit 3ee57c79cd1047b0baf0e4815d1c1c62f912c570
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:10:15 2023 +0530
+
+    Update index.html
+
+commit 5a521aabb353a3f4ac3e8266199ede3e34ebe81c
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:18:51 2023 +0530
+
+    added the p tag in  index.html
+
+commit 469ce6e775c5762cb02ef21a7749387603c05abc
+Author: dhiraj1008 <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 17:05:48 2023 +0530
+
+    index.htm added with biolerplate code
+
+commit f857dc179da2190d08ea8187d883bbf3d992580c (origin/main)
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 19:28:45 2023 +0530
+
+    Update index.html
+
+commit e5b88867f9f14613511804f5fac66c06c8920cca
+Merge: f789fa5 867330c
+Author: Dhiraj Alate <dhirajalate92@gmail.com>
+Date:   Wed Dec 6 14:24:12 2023 +0530
+
+    Merge pull request #1 from dhiraj1008/feature-b
+
+    updated utils,js file
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ ls
+README.md  index.html  main.css  main.go  new/  script.js  status  utlis.js
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ cat utlis.js
+//Todo - implement applicatios
+//Algorithm for our applicatios
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stash pop
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hipe.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   utlis.js
+
+Dropped refs/stash@{0} (64d2f2f2c5c8f506632779d7c333af911f8ef1f7)
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git status
+On branch feature-xyz
+Your branch is up to date with 'origin/feature-xyz'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hipe.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   utlis.js
+
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stach
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stach clear
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git add .
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stash
+Saved working directory and index state WIP on feature-xyz: e21cf65 added github
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stach clear
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stach clean
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stash clear
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stach pop
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git stash pop
+No stash entries found.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git checkout
+Your branch is up to date with 'origin/feature-xyz'.
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit (feature-xyz)
+$ git checkout -
+Note: switching to 'e5b88867f9f14613511804f5fac66c06c8920cca'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e5b8886 Merge pull request #1 from dhiraj1008/feature-b
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$ vi cmdlinehistory.txt
+
+darsh@Dhiraj MINGW64 /c/desktop/dhiraj/git_github_learn/learninggit ((e5b8886...))
+$
